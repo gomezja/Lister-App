@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7616D1351F2170B300EFB911 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D12D1F2170B300EFB911 /* Item+CoreDataClass.swift */; };
+		7616D1361F2170B300EFB911 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D12E1F2170B300EFB911 /* Item+CoreDataProperties.swift */; };
+		7616D1371F2170B300EFB911 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D12F1F2170B300EFB911 /* ItemType+CoreDataClass.swift */; };
+		7616D1381F2170B300EFB911 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1301F2170B300EFB911 /* ItemType+CoreDataProperties.swift */; };
+		7616D1391F2170B300EFB911 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1311F2170B300EFB911 /* Image+CoreDataClass.swift */; };
+		7616D13A1F2170B300EFB911 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1321F2170B300EFB911 /* Image+CoreDataProperties.swift */; };
+		7616D13B1F2170B300EFB911 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1331F2170B300EFB911 /* Store+CoreDataClass.swift */; };
+		7616D13C1F2170B300EFB911 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1341F2170B300EFB911 /* Store+CoreDataProperties.swift */; };
+		7616D1401F22AB9400EFB911 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7616D13F1F22AB9400EFB911 /* tesla.jpg */; };
+		7616D1431F22ABE600EFB911 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1421F22ABE600EFB911 /* MaterialView.swift */; };
 		76F68D6C1F21617400B3759A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F68D6B1F21617400B3759A /* AppDelegate.swift */; };
-		76F68D6E1F21617400B3759A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F68D6D1F21617400B3759A /* ViewController.swift */; };
+		76F68D6E1F21617400B3759A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F68D6D1F21617400B3759A /* MainVC.swift */; };
 		76F68D711F21617400B3759A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F68D6F1F21617400B3759A /* Main.storyboard */; };
 		76F68D741F21617400B3759A /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76F68D721F21617400B3759A /* DreamLister.xcdatamodeld */; };
 		76F68D761F21617400B3759A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F68D751F21617400B3759A /* Assets.xcassets */; };
@@ -16,9 +26,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7616D12D1F2170B300EFB911 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7616D12E1F2170B300EFB911 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7616D12F1F2170B300EFB911 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7616D1301F2170B300EFB911 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7616D1311F2170B300EFB911 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7616D1321F2170B300EFB911 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7616D1331F2170B300EFB911 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7616D1341F2170B300EFB911 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7616D13F1F22AB9400EFB911 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
+		7616D1421F22ABE600EFB911 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		76F68D681F21617400B3759A /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F68D6B1F21617400B3759A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76F68D6D1F21617400B3759A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76F68D6D1F21617400B3759A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		76F68D701F21617400B3759A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76F68D731F21617400B3759A /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		76F68D751F21617400B3759A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +57,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7616D13D1F2170EC00EFB911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7616D12D1F2170B300EFB911 /* Item+CoreDataClass.swift */,
+				7616D12F1F2170B300EFB911 /* ItemType+CoreDataClass.swift */,
+				7616D1311F2170B300EFB911 /* Image+CoreDataClass.swift */,
+				7616D1331F2170B300EFB911 /* Store+CoreDataClass.swift */,
+				7616D13E1F2170F200EFB911 /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7616D13E1F2170F200EFB911 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				7616D12E1F2170B300EFB911 /* Item+CoreDataProperties.swift */,
+				7616D1301F2170B300EFB911 /* ItemType+CoreDataProperties.swift */,
+				7616D1321F2170B300EFB911 /* Image+CoreDataProperties.swift */,
+				7616D1341F2170B300EFB911 /* Store+CoreDataProperties.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+		7616D1411F22ABC200EFB911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7616D1421F22ABE600EFB911 /* MaterialView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		76F68D5F1F21617400B3759A = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +107,11 @@
 		76F68D6A1F21617400B3759A /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				7616D1411F22ABC200EFB911 /* View */,
+				7616D13D1F2170EC00EFB911 /* Model */,
 				76F68D6B1F21617400B3759A /* AppDelegate.swift */,
-				76F68D6D1F21617400B3759A /* ViewController.swift */,
+				76F68D6D1F21617400B3759A /* MainVC.swift */,
+				7616D13F1F22AB9400EFB911 /* tesla.jpg */,
 				76F68D6F1F21617400B3759A /* Main.storyboard */,
 				76F68D751F21617400B3759A /* Assets.xcassets */,
 				76F68D771F21617400B3759A /* LaunchScreen.storyboard */,
@@ -127,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F68D791F21617400B3759A /* LaunchScreen.storyboard in Resources */,
+				7616D1401F22AB9400EFB911 /* tesla.jpg in Resources */,
 				76F68D761F21617400B3759A /* Assets.xcassets in Resources */,
 				76F68D711F21617400B3759A /* Main.storyboard in Resources */,
 			);
@@ -139,9 +194,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76F68D6E1F21617400B3759A /* ViewController.swift in Sources */,
+				7616D13A1F2170B300EFB911 /* Image+CoreDataProperties.swift in Sources */,
+				7616D1371F2170B300EFB911 /* ItemType+CoreDataClass.swift in Sources */,
+				76F68D6E1F21617400B3759A /* MainVC.swift in Sources */,
+				7616D1431F22ABE600EFB911 /* MaterialView.swift in Sources */,
 				76F68D6C1F21617400B3759A /* AppDelegate.swift in Sources */,
+				7616D13C1F2170B300EFB911 /* Store+CoreDataProperties.swift in Sources */,
+				7616D1391F2170B300EFB911 /* Image+CoreDataClass.swift in Sources */,
+				7616D1351F2170B300EFB911 /* Item+CoreDataClass.swift in Sources */,
 				76F68D741F21617400B3759A /* DreamLister.xcdatamodeld in Sources */,
+				7616D13B1F2170B300EFB911 /* Store+CoreDataClass.swift in Sources */,
+				7616D1381F2170B300EFB911 /* ItemType+CoreDataProperties.swift in Sources */,
+				7616D1361F2170B300EFB911 /* Item+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +367,7 @@
 				76F68D7F1F21617400B3759A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
