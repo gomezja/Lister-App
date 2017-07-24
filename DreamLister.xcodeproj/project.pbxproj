@@ -17,6 +17,7 @@
 		7616D13C1F2170B300EFB911 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1341F2170B300EFB911 /* Store+CoreDataProperties.swift */; };
 		7616D1401F22AB9400EFB911 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7616D13F1F22AB9400EFB911 /* tesla.jpg */; };
 		7616D1431F22ABE600EFB911 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1421F22ABE600EFB911 /* MaterialView.swift */; };
+		7616D1451F22B30100EFB911 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7616D1441F22B30100EFB911 /* ItemCell.swift */; };
 		76F68D6C1F21617400B3759A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F68D6B1F21617400B3759A /* AppDelegate.swift */; };
 		76F68D6E1F21617400B3759A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F68D6D1F21617400B3759A /* MainVC.swift */; };
 		76F68D711F21617400B3759A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F68D6F1F21617400B3759A /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		7616D1341F2170B300EFB911 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7616D13F1F22AB9400EFB911 /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		7616D1421F22ABE600EFB911 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		7616D1441F22B30100EFB911 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		76F68D681F21617400B3759A /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F68D6B1F21617400B3759A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F68D6D1F21617400B3759A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				7616D1421F22ABE600EFB911 /* MaterialView.swift */,
+				7616D1441F22B30100EFB911 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7616D1451F22B30100EFB911 /* ItemCell.swift in Sources */,
 				7616D13A1F2170B300EFB911 /* Image+CoreDataProperties.swift in Sources */,
 				7616D1371F2170B300EFB911 /* ItemType+CoreDataClass.swift in Sources */,
 				76F68D6E1F21617400B3759A /* MainVC.swift in Sources */,
