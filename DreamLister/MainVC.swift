@@ -69,7 +69,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         let dateSort = NSSortDescriptor(key: "created", ascending: false)
         fetchRequest.sortDescriptors = [dateSort]
         // creation
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context!, sectionNameKeyPath: nil, cacheName: nil)
+        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
         self.controller = controller
         
@@ -122,22 +122,23 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
     
     func generateTestDate() {
-        let item = Item(context: context!)
+        /*
+        let item = Item(context: context)
         item.title = "MacBook Pro"
         item.price = 18000
         item.details = "I can't wait for the September event, I hope they release new MBPs"
         
-        let item2 = Item(context: context!)
+        let item2 = Item(context: context)
         item2.title = "Test"
         item2.price = 47383
         item2.details = "I can't wait for the water bottle int, I hope they release new MBPs"
         
-        let item3 = Item(context: context!)
+        let item3 = Item(context: context)
         item3.title = "Tesla"
         item3.price = 110000
         item3.details = "This is my sentence for this detail segment."
         
-        ad?.saveContext()
+        ad.saveContext() */
     }
 }
 
