@@ -71,6 +71,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         // creation
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
+        controller.delegate = self
+    
         self.controller = controller
         
         // attempt to fetch
@@ -82,7 +84,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
     
-    // when table view updates will
+    // when table view updates
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }

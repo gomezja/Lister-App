@@ -27,7 +27,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         storePicker.dataSource = self
         storePicker.delegate = self
-        
+        /*
         let store = Store(context: context)
         store.name = "Best Buy"
         let store2 = Store(context: context)
@@ -41,7 +41,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         let store6 = Store(context: context)
         store6.name = "Radio Shack"
  
-        ad.saveContext()
+        ad.saveContext()*/
         getStores()
  
     }
@@ -72,5 +72,29 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         } catch {
             // handle the error
         }
+    }
+    
+    // save information in form
+    @IBAction func SavePressed(_ sender: UIButton) {
+        let item = Item(context: context)
+        
+        if let title = titleField.text {
+            item.title = title
+        }
+        
+        if let price = PriceField.text {
+            item.price = (price as NSString).doubleValue
+        }
+        
+        if let details = detailsField.text {
+            item.details = details
+        }
+        
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        
+        ad.saveContext()
+        
+        // go back to previous screen
+        _ = navigationController?.popViewController(animated: true)
     }
 }
