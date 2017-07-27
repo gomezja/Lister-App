@@ -162,7 +162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="4rw-lA-04A">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="4rw-lA-04A">
                                 <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="OjA-3x-uN2"/>
@@ -170,11 +170,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-63-Xyx">
-                                <rect key="frame" x="43" y="107" width="46" height="30"/>
+                                <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="3Mn-BJ-f7y"/>
-                                    <constraint firstAttribute="width" constant="46" id="Vca-ad-NEe"/>
+                                    <constraint firstAttribute="height" constant="100" id="3Mn-BJ-f7y"/>
+                                    <constraint firstAttribute="width" constant="100" id="Vca-ad-NEe"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="DyL-XC-OJW" eventType="touchUpInside" id="Eo7-DH-l3T"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwk-Ev-glF" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="124" y="82" width="235" height="40"/>
@@ -265,12 +268,16 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="lhz-Or-Iej">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="S94-ZW-3VL">
                             <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="DyL-XC-OJW" id="ejy-Es-Jot"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="PriceField" destination="Ago-Nb-A5Y" id="8ug-vM-Eha"/>
                         <outlet property="detailsField" destination="GLv-EU-ngz" id="9D2-MH-FEB"/>
                         <outlet property="storePicker" destination="mY6-Li-bSm" id="xUt-JW-QJj"/>
+                        <outlet property="thumbImg" destination="4rw-lA-04A" id="SEO-Lh-LfP"/>
                         <outlet property="titleField" destination="Qwk-Ev-glF" id="q9D-eC-fwv"/>
                     </connections>
                 </viewController>
